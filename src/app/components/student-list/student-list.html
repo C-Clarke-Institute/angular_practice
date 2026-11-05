@@ -1,0 +1,29 @@
+<h2 class="mb-4"> Student List</h2>
+
+<table class="table table-bordered table-striped">
+  <thead class="table-dark">
+    <tr>
+        <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Contact</th>
+      <th>Course</th>
+      <th>Status</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    @for (student of students; track student.id) {
+      <tr>
+        <td>{{student.id}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.email}}</td>
+        <td>{{student.contact}}</td>
+        <td>{{student.course}}</td>
+        <td>{{student.status}}</td>
+
+      </tr>
+    }
+  </tbody>
+</table>

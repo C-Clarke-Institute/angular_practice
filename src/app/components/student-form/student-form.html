@@ -1,0 +1,72 @@
+<div class="card shadow">
+
+  <div class="card-header bg-primary text-white">
+    <h4 class="mb-0"> Register New Student</h4>
+  </div>
+
+  <div class="card-body">
+
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Student Name</label>
+        <input type="text"
+        class="form-control" placeholder="Enter Student Name"
+               [(ngModel)] ="studentName"
+               name="studentName"
+        >
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email"
+               class="form-control" placeholder="Enter Email"
+               [(ngModel)] ="email"
+               name="email"
+        >
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Contact</label>
+        <input type="text"
+               class="form-control" placeholder="Enter Student Name"
+               [(ngModel)] ="contact"
+               name="contact"
+        >
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Select Course</label>
+        <select class="form-select"
+        [(ngModel)]="course" name="course">
+
+          <option value="Advanced AI">Advanced AI</option>
+          <option value="SE">Software Engineering</option>
+          <option value="Mobile">Mobile App Dev</option>
+
+        </select>
+
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Status</label>
+        <select class="form-select"
+                [(ngModel)]="status" name="status">
+
+          <option value="Active">Active</option>
+          <option value="Completed">Completed</option>
+        </select>
+      </div>
+
+      <button type="button" class="btn btn-primary">
+        Register Student
+      </button>
+
+    </form>
+
+    <div class="alert alert-success mt-3">
+      Entered Student Name : {{studentName}}
+    </div>
+
+  </div>
+
+</div>
